@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffecc469;
+}
+
+.navbar{
+    background-color: #ffe3a8;
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
+
+.navbar .title a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .title a img{
+    width: 120px;
+    margin-right: 15px;
+}
+
+.navbar .title a h1{
+    color: maroon;
+    font-family: 'Abril Fatface';
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar ul a{
+    padding: 0 15px;
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: maroon;
+    transition: color 0.3s ease;
+}
+
+.navbar ul a:hover{
+    color: black;
+}
+
+.char-container{
+    background-color: #ffecc4;
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.char-container h1{
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-size: 60px;
+    color: #680000;
+    user-select: none;
+}
+
+.char-container .char-quote{
+    text-align: center;
+    font-family: 'Bebas Neue';
+    user-select: none;
+}
+
+.char-container .char-bar{
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+    background-color: #f8dfa7;
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+
+.char-container .char-bar #ch-br-relationships{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.char-container .char-bar a{
+    margin-inline: 20px;
+    font-family: 'Abril Fatface';
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.char-container .char-bar a:hover{
+    background-color: #e4c686;
+}
+
+.char-container .char-details .char-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.char-container .char-details .char-profile .cp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.char-container .char-details .char-profile .cp-container span{
+    position: absolute;
+    top: 0;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: maroon;
+    user-select: none;
+}
+
+.char-container .char-details .char-profile .cp-container img{
+    width: 260px;
+    margin: 30px 10px 10px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.char-container .char-details .char-profile .cp-container img:hover{
+    transform: scale(1.01);
+}
+
+.char-container .char-details .char-info{
+    display: flex;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease;
+}
+
+.char-container .char-details .char-info table{
+    border-collapse: collapse;
+}
+
+.char-container .char-details .char-info table tr td{
+    padding: 7px;
+    border: 2px solid maroon;
+    font-family: 'Roboto';
+}
+
+.char-container .char-details .expand-btn{
+    cursor: pointer;
+    user-select: none;
+}
+
+.char-container .char-details #expand{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-size: 20px;
+    font-weight: 900;
+    color: maroon;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.char-container .char-details #expand:hover{
+    color: black;
+}
+
+.char-container hr{
+    margin: 10px 30px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.char-container .char-family{
+    margin: 40px 40px 0 40px;
+    font-family: 'Roboto';
+}
+
+.char-container .char-family h2{
+    font-family: 'Abril Fatface';
+    font-size: 35px;
+}
+
+.char-container .char-family h4{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface';
+}
+
+.char-container .char-allies{
+    margin: 40px 40px 0 40px;
+    font-family: 'Roboto';
+}
+
+.char-container .char-allies h2{
+    font-family: 'Abril Fatface';
+    font-size: 35px;
+}
+
+.char-container .char-allies h4{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface';
+}
+
+.char-container .char-heavenlyofficials{
+    margin: 40px 40px 0 40px;
+    font-family: 'Roboto';
+}
+
+.char-container .char-heavenlyofficials h2{
+    font-family: 'Abril Fatface';
+    font-size: 35px;
+}
+
+.char-container .char-heavenlyofficials h4{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface';
+}
+
+.char-container .char-ghosts{
+    margin: 40px 40px 0 40px;
+    font-family: 'Roboto';
+}
+
+.char-container .char-ghosts h2{
+    font-family: 'Abril Fatface';
+    font-size: 35px;
+}
+
+.char-container .char-ghosts h4{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface';
+}
+
+.char-container .char-humans{
+    margin: 40px 40px 0 40px;
+    font-family: 'Roboto';
+}
+
+.char-container .char-humans h2{
+    font-family: 'Abril Fatface';
+    font-size: 35px;
+}
+
+.char-container .char-humans h4{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface';
+}
+
+.char-container .char-weapons{
+    margin: 40px;
+    font-family: 'Roboto';
+}
+
+.char-container .char-weapons h2{
+    font-family: 'Abril Fatface';
+    font-size: 35px;
+}
+
+.char-container .char-weapons h4{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface';
+}
+
+.char-container .char-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.char-container .char-back a{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    font-weight: 900;
+    color: maroon;
+    text-decoration: none;
+    background-color: #f8dfa7;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.char-container .char-back a:hover{
+    filter: brightness(0.95);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #a88b4d;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: maroon;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(104, 0, 0);
+}
